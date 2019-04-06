@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewOrderDetailFragment"
+    android:background="@color/light_grey">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_detail_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Id #9338489440039"
+                android:textAllCaps="true"/>
+
+            <View
+                android:id="@+id/divider_horizontal1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/tv_order_detail_id"/>
+
+            <ImageView
+                android:id="@+id/ic_order_detail_item"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/red_basket_logo"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/divider_horizontal1"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity: 1"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/ic_order_detail_item"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Redmi Note 5 Pro"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:layout_below="@id/divider_horizontal1"
+                android:layout_toRightOf="@id/ic_order_detail_item"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_order_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Date: "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_product_name"
+                android:layout_toRightOf="@id/ic_order_detail_item"/>
+
+
+            <TextView
+                android:id="@+id/tv_order_detail_delivery_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delivery Date: "
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_order_date"
+                android:layout_toRightOf="@id/ic_order_detail_item"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Placed"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:background="@color/colorAccent"
+                android:layout_below="@id/tv_order_detail_delivery_date"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_detail_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Price Details"
+                android:textAllCaps="true"/>
+
+            <View
+                android:id="@+id/divider_horizontal2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/tv_order_detail_price"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_MRP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MRP"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/divider_horizontal2"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_MRP_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 13,000"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/divider_horizontal2"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Discount"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_MRP"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_discount_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 13,000"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_MRP_value"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_selling_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selling Price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_discount"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_selling_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 13,000"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_discount_value"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_total_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Price"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_order_detail_selling_price"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_total_price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹ 13,000"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv_order_detail_selling_price_value"
+                android:layout_alignParentRight="true"/>
+
+            <View
+                android:id="@+id/divider_horizontal3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/tv_order_detail_total_price"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode: Cash On Delivery"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_below="@id/divider_horizontal3"/>
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="2dp"
+        app:contentPadding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_order_detail_shipping_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Shipping Address"
+                android:textAllCaps="true"/>
+
+            <View
+                android:id="@+id/divider_horizontal4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_grey"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_below="@id/tv_order_detail_shipping_address"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visnu Bochiwal"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/divider_horizontal4"
+                android:layout_alignParentLeft="true"/>
+
+<!--            <TextView
+                android:id="@+id/tv_order_detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Navodaya Boys Hostel, Shatabadi Nagar, Opps EPIP Gate, Sitapura, Jaipur, Rajsthan - 302022"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_full_name"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_landmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JECRC"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_address"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/tv_order_detail_mobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7727084821"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_below="@id/tv_order_detail_landmark"
+                android:layout_alignParentLeft="true"/>-->
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</ScrollView>

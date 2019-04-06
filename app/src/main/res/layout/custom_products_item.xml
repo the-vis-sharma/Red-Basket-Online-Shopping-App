@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/layout_product_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ic_product_item"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/red_basket_logo"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/tv_product_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_background"
+            android:gravity="center"
+            android:textColor="@android:color/white" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_product_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/layout_product_icon"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_product_mrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/strike_through"
+        android:layout_below="@+id/tv_product_name"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/layout_product_icon"
+        android:textColor="@android:color/darker_gray"/>
+
+    <TextView
+        android:id="@+id/tv_product_selling_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_product_mrp"
+        android:layout_toRightOf="@id/layout_product_icon"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_product_dec"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_product_selling_price"
+        android:layout_toLeftOf="@id/tv_product_quantity"
+        android:background="@color/colorPrimary"
+        android:text="-"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv_product_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_below="@+id/tv_product_selling_price"
+        android:layout_toLeftOf="@+id/btn_product_inc"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="0"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_product_inc"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_product_selling_price"
+        android:background="@color/colorPrimary"
+        android:text="+"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

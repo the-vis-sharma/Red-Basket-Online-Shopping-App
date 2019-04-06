@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangePassFragment">
+
+    <RelativeLayout
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/ic_change_pass_dp"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:src="@drawable/ic_menu_logout"
+            android:layout_alignParentTop="true"
+            android:tint="@android:color/white"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/tv_change_pass_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_toRightOf="@id/ic_change_pass_dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_change_pass_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mobile"
+            android:layout_toRightOf="@id/ic_change_pass_dp"
+            android:layout_below="@id/tv_change_pass_full_name"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tv_change_pass_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="email"
+            android:layout_toRightOf="@id/ic_change_pass_dp"
+            android:layout_below="@id/tv_change_pass_mobile"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@+id/login_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Current Password"
+                android:id="@+id/et_change_pass_cur_pass"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_margin="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="New Password"
+                android:id="@+id/et_change_pass_new_pass"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_change_pass_cur_pass"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm Password"
+                android:id="@+id/et_change_pass_con_pass"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_change_pass_new_pass"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_change_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_change_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

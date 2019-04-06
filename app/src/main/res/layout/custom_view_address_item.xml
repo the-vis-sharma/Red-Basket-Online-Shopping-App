@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@android:color/white">
+
+    <RadioButton
+        android:id="@+id/rb_view_address_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="8dp"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/black"
+        android:layout_toRightOf="@id/rb_view_address_select"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_address_item_full_name"
+        android:layout_toRightOf="@id/rb_view_address_select"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_landmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_address_item_address"
+        android:layout_toRightOf="@id/rb_view_address_select"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tv_address_item_landmark"
+        android:layout_toRightOf="@id/rb_view_address_select"/>
+
+
+    <View
+        android:id="@+id/add_item_diver_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/light_grey"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/tv_address_item_mobile"/>
+
+    <View
+        android:id="@+id/address_item_divider"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:background="@color/light_grey"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/add_item_diver_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_toLeftOf="@id/address_item_divider"
+        android:layout_below="@id/add_item_diver_horizontal"/>
+
+    <TextView
+        android:id="@+id/tv_address_item_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_toRightOf="@id/address_item_divider"
+        android:layout_below="@id/add_item_diver_horizontal"/>
+
+</RelativeLayout>

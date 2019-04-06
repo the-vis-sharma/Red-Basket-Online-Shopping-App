@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewAddressFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_marginBottom="56dp"
+        android:layout_below="@+id/login_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:id="@+id/et_add_address_full_name"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:layout_margin="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:id="@+id/et_add_address_mobile"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_add_address_full_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Locality, Area or Street"
+                android:id="@+id/et_add_address_locality"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPostalAddress"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_add_address_mobile"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:id="@+id/et_add_address_city"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_add_address_locality"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:id="@+id/et_add_address_state"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_margin="16dp"
+                android:layout_toStartOf="@id/et_add_address_pincode"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/et_add_address_city"/>
+
+            <EditText
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:hint="Pincode"
+                android:id="@+id/et_add_address_pincode"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_margin="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/et_add_address_city"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Landmark"
+                android:id="@+id/et_add_address_landmark"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="text"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_add_address_state"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_save_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_save_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Address"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

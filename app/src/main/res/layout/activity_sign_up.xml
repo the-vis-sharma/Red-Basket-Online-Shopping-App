@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="64dp"
+        android:background="@color/colorAccent">
+
+        <ImageView
+            android:id="@+id/ic_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/red_basket_logo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:id="@+id/ic_name"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/red_basket_name"
+            android:layout_toRightOf="@+id/ic_logo"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Your Account"
+            android:layout_below="@id/ic_name"
+            android:textSize="24sp"
+            android:textColor="@android:color/white"
+            android:padding="16dp"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp"
+        android:layout_below="@+id/login_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="48dp"
+            android:paddingBottom="16dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:id="@+id/et_signup_full_name"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPersonName"
+                android:layout_margin="16dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mobile"
+                android:id="@+id/et_signup_mobile"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="phone"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_signup_full_name"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/et_signup_email"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_signup_mobile"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/et_signup_pass"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:layout_margin="16dp"
+                android:layout_below="@id/et_signup_email"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already Have An Account?"
+                android:id="@+id/tv_signup_signin"
+                android:textColor="#00004C"
+                android:layout_marginLeft="24dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/et_signup_pass"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_grey"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SIGN-UP >"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_signup_signup"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

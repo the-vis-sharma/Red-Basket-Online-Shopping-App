@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".SplashScreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <ImageView
+        android:id="@+id/ic_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/red_basket_logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"/>
+
+    <ImageView
+        android:id="@+id/ic_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/red_basket_name"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ic_logo"/>
+
+    <com.skylark.redbasket.TypeWriter
+        android:id="@+id/tag_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="* MRP से कम"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"/>
+
+
+
+</RelativeLayout>

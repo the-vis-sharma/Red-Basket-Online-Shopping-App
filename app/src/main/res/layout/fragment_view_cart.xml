@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ViewCartFragment"
+    android:background="@color/light_grey">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cart_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="16dp"
+        app:cardElevation="2dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/tv_cart_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0 Items | ₹ 0.00"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"/>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_cart_product_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_above="@id/tv_view_cart_note"
+        android:layout_below="@id/cv_cart_header">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tv_view_cart_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="* Shop for more than ₹ 300 and get Free delivery, otherwise standard delivery charges of ₹ 40 will be apply."
+        android:layout_above="@id/btn_cart_checkout"
+        android:background="@android:color/white"
+        android:padding="8dp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:id="@+id/btn_cart_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="16dp"
+        android:text="Checkout"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true">
+
+    </Button>
+
+</RelativeLayout>
