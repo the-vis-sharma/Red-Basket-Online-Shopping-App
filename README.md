@@ -1,5 +1,5 @@
-# Red-Basket-Online-Shopping-App
-It's an eCommerce app for RedBasket Shop to provide an online platform.
+# Red Basket - Online Shopping App
+It's an eCommerce app for Red Basket Shop to provide an online platform. It's developed using Android and PHP for Web Services.
 
 # Screenshots
 <img src="/../master/Screenshot/1.PNG?raw=true" width="300" height="600" />
