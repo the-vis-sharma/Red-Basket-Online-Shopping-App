@@ -2,14 +2,13 @@
 It's an eCommerce app for RedBasket Shop to provide an online platform.
 
 # Screenshots
-<img src="/../master/Screenshots/1.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/2.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/3.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/4.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/5.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/6.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/7.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/8.png?raw=true" width="300" height="600" />
-<img src="/../master/Screenshots/9.png?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/1.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/2.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/3.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/4.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/5.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/6.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/7.PNG?raw=true" width="300" height="600" />
+<img src="/../master/Screenshot/8.PNG?raw=true" width="300" height="600" />
 
 
